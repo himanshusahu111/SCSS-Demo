@@ -1,0 +1,54 @@
+
+@use 'variable';
+@use 'mixin';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    outline:none;
+}
+
+body{
+    margin:0;
+    padding:0;
+    // background-color:$white;
+    font-family: "Inter", serif;
+    background-color: #a1d8c7;
+}
+.box-area{
+    background-color: aquamarine;
+    color: $black;
+    padding:25px;
+
+    ul{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+    }
+    li{
+        display: $inline-block;
+        vertical-align: middle;
+        margin:5px 15px;
+    }
+    a{
+        text-decoration: $none;
+        color:$black;
+        display:$block;
+        font-size:$fontsize-16;
+        font-weight:$font-500;
+    }
+}
+
+// .middel-content{
+//     margin-top:$margin-top-40;
+//     text-align: center;
+
+//     .title-section{
+//         padding-top:$padding-bottom-40;
+//     }
+    
+// }
+
